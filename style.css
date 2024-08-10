@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20px;
+}
+
+.container{
+    background: #f6eaea;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+.container>.tag>a{
+    text-decoration: none;
+    color: #2121fe;
+    text-transform: capitalize;
+}
+
+.container>.tag>a:hover{
+    color: black;
+}
+.container>.tag>a:visited{
+    color: #016e6e;
+}

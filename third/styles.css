@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 800px 200px 200px;
+}
+
+.box{
+    padding: 10px;
+}
+.box1{
+    background-color: orange;
+    
+}
+.box2{
+    background-color: #aba3a3;
+}
+.box3{
+    background-color: greenyellow;
+}

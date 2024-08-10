@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-layouts {
+    padding: 2rem;
+}
+
+.grid-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid-container h2 {
+    margin-top: 0;
+}
+
+.basic-grid,
+.responsive-grid,
+.advanced-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.basic-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.responsive-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.advanced-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas:
+        "a b c"
+        "d e f";
+}
+
+.item {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+.item6 { grid-area: f; }
