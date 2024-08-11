@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    margin: 2px;
+    max-height: 500vh;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'sidebar content content rightsidebar'
+                         'sidebar content content rightsidebar'
+                         'sidebar2 content content rightsidebar'
+                         'page page page2 page2'
+                         'main main main main'
+                         'footer footer footer footer'
+                         ;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 6fr 10fr 1fr;
+}
+.header, .sidebar, .content, .footer, .sidebar2 , .main, .page,.page2, .rightsidebar{
+    padding: 20px; 
+    margin: 5px;
+    /* border-radius: 2px; */
+}
+.header{
+    grid-area: header;
+    background: blue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.header> a{
+    text-decoration: none;
+    color: beige;
+    text-justify: 2px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: yellow;
+}
+.sidebar2{
+    grid-area: sidebar2;
+    background: green;
+}
+.rightsidebar{
+    grid-area: rightsidebar;
+    background: indigo;
+}
+.content{
+    grid-area: content;
+    background: grey;
+    font-size: 25px;
+    text-align: center;
+    overflow: scroll;
+  scrollbar-width: none;
+}
+.page{
+    grid-area: page;
+    background: #000;
+}
+.page2{
+    grid-area: page2;
+    background: yellowgreen;
+}
+.main{
+    grid-area: main;
+    background: #aa7070;
+    display: grid;
+    grid-template-areas: 'gallary0 gallary1' 'gallary2 gallary3';
+}
+.gallary{
+    background: orange;
+    margin: 5px;
+}
+.gallary0{
+    background: green;
+}
+.gallry1{
+    background: pink;
+}
+.gallary2{
+    background: red;
+}
+.gallary3{
+    background: #000;
+}
+.footer{
+    grid-area: footer;
+    background: orange;
+}
